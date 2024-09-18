@@ -1,0 +1,214 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  height: 100vh;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: auto; /* so that the div expands into the space and then you can make it space-evenly */
+  justify-content: space-evenly;
+}
+
+.child {
+  display: flex;
+  flex: auto;
+  padding: 12px 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 100px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  transition: all 0.3s ease; /* Smooth transition for responsive layout */
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #f9faf8;
+  background-color: #1f2937;
+  padding: 10px;
+  margin: 0px;
+}
+
+.links {
+  display: flex;
+}
+
+.header-link {
+  margin: 10px;
+}
+
+.header-logo {
+  font-size: 24px;
+
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 12px 20px;
+  }
+  .header-link {
+    margin: 10px 5px;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  gap: 40px;
+  align-items: center;
+  height: 400px;
+}
+
+.pep-top {
+  height: 300px;
+  flex: auto;
+}
+
+.subtext-top {
+  color: rgb(202, 202, 202);
+  margin: 0px;
+}
+
+.awesome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#signup {
+  background-color: #3882f6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  height: 20px;
+  width: 90px;
+  min-width: 90px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  border: 2px solid white;
+}
+
+h2 {
+  margin-bottom: 0px;
+  color: white;
+}
+
+.pep-middle {
+  width: 100px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  transition: left 0.4s ease;
+}
+
+#middle-header {
+  color: black;
+  text-align: center;
+}
+
+.pics {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+  .pics {
+    min-width: 144px;
+    /* if it gets small enough then no longer 90%, just make it have a min-width that it can't get smaller than */
+  }
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+
+.pics p {
+    width: 140px
+}
+
+.pics div {
+  text-align: center;
+  transition: margin 0.4s ease, transform 0.4s ease; /* Smooth transition for margin and positioning */
+}
+
+.pics img {
+  transition: width 0.4s ease; /* Smooth transition when the size changes */
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  background-color: lightgray;
+}
+
+#thor-quote {
+  width: 400px;
+  color: rgb(74, 74, 74);
+}
+
+#thor {
+  width: 400px;
+  margin-top: 0px;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.CTA-box {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 100px;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+}
+
+.CTA-box p,
+.CTA-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+h3 {
+  margin: 0;
+}
+
